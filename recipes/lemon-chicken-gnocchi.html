@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function darkModeFunction(dm) {
+                document.getElementById(dm).style.background = "black"
+                document.getElementById(dm).style.color = "yellow"
+                
+            } 
+            
+    </script>
     <title>Lemon Chicken Gnocchi</title>
 </head>
-<body>
+<body class="bgColor" id="darkLight">
     <h1>Lemon Chicken Gnocchi</h1>
-    <img src="https://skinnyspatula.com/wp-content/uploads/2021/10/Creamy_Gnocchi_Chicken4.jpg" alt="Creamy Chicken Gnocchi" width="300">
+    <img src="https://skinnyspatula.com/wp-content/uploads/2021/10/Creamy_Gnocchi_Chicken4.jpg" alt="Creamy Chicken Gnocchi" width="300" height="auto">
     <h2>Description</h2>
     <p>Gnocchi and chicken in a creamy lemon sauce topped with spinach. This is my personal favorite recipe!</p> 
     <h3>Ingredients</h3>
-    <ul>
+    <ul class="stepsText">
         <li>1 tablespoon olive oil</li>
         <li>30g (2 tablespoons) unsalted butter</li>
         <li>350g (12oz) chicken breast, diced</li>
@@ -56,5 +65,6 @@
 
 
     </ul>
+    <button onclick="darkModeFunction('darkLight')">Dark Mode</button>
 </body>
 </html>
