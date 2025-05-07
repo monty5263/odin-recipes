@@ -1,10 +1,14 @@
 .container {
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
     
 }
 .text {
-    color: rgb(0, 0, 0);
+    color: black;
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
 }
 
@@ -13,8 +17,26 @@
     margin-right: 20px;
 }
 .bgImage {
-    background-image: url(images/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg);
+    background-image: url(images/lemon-chicken-gnocchi-recipe-3-1024x1536.jpg);
     background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode: overlay;
-    background-size: cover;
+    background-blend-mode:color;
+    background-size:contain;
+}
+.image-section {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section,
+    .text-section {
+        width: 100;
+    }
+}
+.text-section {
+    flex: 1;
 }

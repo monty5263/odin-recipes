@@ -1,0 +1,10 @@
+.bg {
+    background-image: url('recipes/images/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg');
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode:color;
+    background-size:cover
+}
+.row {
+    text-align: center;
+    width: 300;
+}
