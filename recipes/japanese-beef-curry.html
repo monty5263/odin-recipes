@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japanese Beef Curry</title>
+    <script>
+        function darkModeFunction(dm) {
+                if (document.getElementById(dm).style.backgroundColor === "white") {
+                    document.getElementById(dm).style.background = "black"
+                    document.getElementById(dm).style.color = "yellow"
+                    return
+                }
+                document.getElementById(dm).style.background = "white"
+                document.getElementById(dm).style.color = "black"
+                
+            } 
+            
+    </script>
 </head>
-<body>
+<body style="background-color: white;" id="recipe2">
     <h1>Japanese Beef Curry</h1>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Beef_curry_rice_003.jpg/1280px-Beef_curry_rice_003.jpg" alt="Image of Delicious Japanese Curry" width="500">
+    <hr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Beef_curry_rice_003.jpg/1280px-Beef_curry_rice_003.jpg" style="display: block; margin: auto;"
+    alt="Image of Delicious Japanese Curry" width="700" height="500">
     <h2>Description</h2>
     <p>Delicious Japanese Curry, made with Beef, carrots, potatoes, served with rice on the side.</p>
     <h3>Ingredients</h3>
@@ -77,6 +92,7 @@
 
 
     </ul>
+    <button onclick="darkModeFunction('recipe2')">Dark Mode</button>
 
 
 </body>

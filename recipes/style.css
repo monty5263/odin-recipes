@@ -1,3 +1,20 @@
-.bgColor{
-    background-color: white;
+.container {
+    display: flex;
+    align-items: flex-start;
+    
+}
+.text {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.image {
+    float: left;
+    margin-right: 20px;
+}
+.bgImage {
+    background-image: url(images/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
 }
